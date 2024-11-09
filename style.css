@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    overflow: hidden;
 }
 
 .head {
@@ -41,4 +42,24 @@ body {
     font-size: 20px;
     font-weight: 350;
     text-align: center;
+}
+
+.body {
+    margin: 0px 100px;
+}
+
+.body p {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 50px 0;
+    font-size: 20px;
+    line-height: 120%;
+}
+
+.body p::first-letter {
+    float: left;
+    line-height: 0.8;
+    margin-right: 6px;
+    margin-bottom: -8px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 90px;
 }

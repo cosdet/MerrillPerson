@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    overflow: hidden;
 }
 
 .head {
@@ -45,7 +44,7 @@ body {
 }
 
 .body {
-    margin: 0px 100px;
+    margin: 0 100px;
 }
 
 .body p {
@@ -62,4 +61,23 @@ body {
     margin-bottom: -8px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 90px;
+}
+
+.body hr {
+    margin: 0 150px;
+    border: 0.5px solid #d9d9d9
+}
+
+.body h1 {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 50px 0;
+    font-size: 36px;
+    line-height: 120%;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto 50px;
+    border: 10px solid#d9d9d9;
 }

@@ -2,38 +2,44 @@ body {
     margin: 0;
 }
 
-.head {
+#head {
     height: 60vh;
     width: 100%;
-    background-image: url(img/Slug\ Art.jpeg); /* replace w higher quality */
+    background-image: url(img/merrill.jpg);
     background-size: cover;
-    background-position-y: 45%;
+    background-position: center;
     background-color: #6b705c;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    position:relative;
+    overflow:hidden; 
 }
 
-.title-bg {
-    position: absolute;
-    top: 17.5vh;
-    left: 25vw;
-    height: 25vh;
-    width: 50%;
-    opacity: 90%;
-    background-color: #ffffff;
-    border: solid 1px #d9d9d9;
-    border-radius: 8px;
+#title-bg {
+    background-color: #fffffe;
+    opacity: 0.9;
+    aspect-ratio: 4;
+    min-width: 50%;
+    position:absolute;
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
 }
 
-.title-bg h1 {
+#title-bg h1 {
     font-family: 'Inter', sans-serif;
     color: #1e1e1e;
-    font-size: 64px;
+    font-size: 10vh;
     letter-spacing: -1px;
     line-height: 80px;
     font-weight: bold;
     text-align: center;
 }
 
-.title-bg h2 {
+#title-bg h2 {
     position: relative;
     bottom: 35px;
     font-family: 'Inter', sans-serif;
@@ -49,12 +55,15 @@ body {
 
 .body p {
     font-family: 'Times New Roman', Times, serif;
-    margin: 50px 0;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 50px;
+    margin-bottom: 50px;
     font-size: 20px;
     line-height: 120%;
 }
 
-.body p::first-letter {
+#big-first-letter::first-letter {
     float: left;
     line-height: 0.8;
     margin-right: 6px;
@@ -76,8 +85,38 @@ body {
     text-align: center;
 }
 
+.dialogue p {
+    margin-left: 15vw;
+    margin-right: 15vw;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: left;
+}
+
 img {
     display: block;
     margin: 0 auto 50px;
     border: 10px solid#d9d9d9;
+}
+
+footer {
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    float: right;
+    height: 80px;
+    width: 100%;
+    padding: 0px;
+    bottom: 0;
+    z-index: 100;
+    background-color: #CB997E;
+    color: #FFFFFF;
+}
+
+footer p {
+    position: absolute;
+    right: 5px;
+    margin:5px;
+    width:fit-content;
+    margin-right:15px;
 }

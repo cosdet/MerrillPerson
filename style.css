@@ -63,7 +63,7 @@ body {
     line-height: 120%;
 }
 
-#big-first-letter::first-letter {
+#big-first-letter:first-of-type::first-letter {
     float: left;
     line-height: 0.8;
     margin-right: 6px;
@@ -92,6 +92,14 @@ body {
     font-size: 20px;
     text-align: left;
 }
+
+.dialogue li {
+    margin-left: 15vw;
+    margin-right: 15vw;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
 
 img {
     display: block;

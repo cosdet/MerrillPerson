@@ -1,13 +1,18 @@
 let dia1 = true
 
-function drop(id) {
-    const el = document.getElementById(id)
+function drop(event, id) {
+    const el = document.getElementById(id);
+    const button = event.target;
+
     if (dia1) {
-        el.style.display = "none"
-        dia1 = false
+        button.classList.remove("open");
+        button.classList.add("closed");
+        el.style.display = "none";
+        dia1 = false;
     } else {
-        el.style.display = "initial"
-        dia1 = true
+        button.classList.remove("closed");
+        button.classList.add("open");
+        el.style.display = "initial";
+        dia1 = true;
     }
-    
 }

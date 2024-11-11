@@ -85,6 +85,32 @@ body {
     text-align: center;
 }
 
+.dropdown-button {
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+    border: 0;
+    padding: 20px;
+    margin-left: 15vw;
+    margin-bottom: 20px;
+}
+
+.dropdown-button.open {
+    background-image: url(img/angle-circle-down-icon.png);
+}
+
+.dropdown-button.open:hover {
+    background-image: url(img/angle-circle-down-hover-icon.png);
+}
+
+.dropdown-button.closed {
+    background-image: url(img/angle-circle-up-icon.png);
+}
+
+.dropdown-button.closed:hover {
+    background-image: url(img/angle-circle-up-hover-icon.png);
+}
+
 .dialogue p {
     margin-left: 15vw;
     margin-right: 15vw;

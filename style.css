@@ -63,7 +63,7 @@ body {
     line-height: 120%;
 }
 
-#big-first-letter:first-of-type::first-letter {
+.big-first-letter:first-letter {
     float: left;
     line-height: 0.8;
     margin-right: 6px;
@@ -85,14 +85,20 @@ body {
     text-align: center;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .dropdown-button {
+    text-align: center;
     background-size: cover;
     background-position: center;
     background-color: transparent;
     border: 0;
     padding: 20px;
-    margin-left: 15vw;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .dropdown-button.open {

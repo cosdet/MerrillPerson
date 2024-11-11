@@ -1,18 +1,24 @@
-let dia1 = true
+const dialogues = {
+    dia1: true,
+    dia2: true,
+    dia3: true,
+    dia4: true,
+    dia5: true
+}   
 
 function drop(event, id) {
     const el = document.getElementById(id);
     const button = event.target;
 
-    if (dia1) {
+    if (dialogues[id]) {
         button.classList.remove("open");
         button.classList.add("closed");
         el.style.display = "none";
-        dia1 = false;
+        dialogues[id] = false;
     } else {
         button.classList.remove("closed");
         button.classList.add("open");
         el.style.display = "initial";
-        dia1 = true;
+        dialogues[id] = true;
     }
 }
